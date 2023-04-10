@@ -8,13 +8,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
+/ {
+
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
 ZMK_BEHAVIOR(smart_shft, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
     mods = <(MOD_LSFT)>;
 )
-
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
