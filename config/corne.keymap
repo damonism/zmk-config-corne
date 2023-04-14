@@ -64,13 +64,13 @@
             mods = <(MOD_LSFT)>;
         };
         
-        td_en: tap_dance_en_dash: {
+        td_en: tap_dance_en_dash {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EN_DASH";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp N>, <&en_dash>;        	
-        }
+        };
     };    
     
         keymap {
