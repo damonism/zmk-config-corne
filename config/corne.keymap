@@ -143,13 +143,13 @@
         		adjust_layer {
             			bindings = <
 // -----------------------------------------------------------------------------------------
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | MUTE|     |     |     |PLAY |     |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   | MUTE|     |     |     |PLAY |     |
 // |      | MAC |     |     |     |     |   | VLUP|BRIUP|     |     |     |     |
-// |      | WIN |     |     |     |     |   | VLDN|BRIDN|PREV |NEXT |     |     |
+// |      | WIN |     |     |     |     |   | VLDN|BRIDN|PREV |NEXT |     |     | BTCLR
 //                    | GUI |     | SPC |   | ENT |     | ALT |
-   &bt BT_CLR &bt BT0 &bt BT1 &bt BT2  &bt BT3 &bt BT4     &kp K_MUTE   &trans       &trans     &trans     &kp C_PP &trans 
-   &trans     &to 0   &trans  &trans   &trans  &trans      &kp C_VOL_UP &kp C_BRI_UP &trans     &trans     &trans   &trans
-   &trans     &to 1   &trans   &trans  &trans      &kp C_VOL_DN &kp C_BRI_DN &kp C_PREV &kp C_NEXT &trans   &trans
+   &trans &bt BT0 &bt BT1 &bt BT2  &bt BT3 &bt BT4     &kp K_MUTE   &trans       &trans     &trans     &kp C_PP &trans 
+   &trans &to 0   &trans  &trans   &trans  &trans      &kp C_VOL_UP &kp C_BRI_UP &trans     &trans     &trans   &trans
+   &trans &to 1   &trans  &trans   &trans  &trans      &kp C_VOL_DN &kp C_BRI_DN &kp C_PREV &kp C_NEXT &trans   &bt BT_CLR
                     	      &kp LGUI &trans  &kp SPACE   &kp RET      &trans       &kp RALT
                     	>;
         	};
