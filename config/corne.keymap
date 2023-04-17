@@ -85,7 +85,7 @@
             label = "TAP_DANCE_DASH";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp H>, <&em_dash>, <&em_dash>;        	
+            bindings = <&kp H>, <&en_dash>, <&em_dash>;        	
         };
 
     };    
