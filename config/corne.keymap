@@ -88,6 +88,15 @@
             bindings = <&kp H>, <&em_dash>, <&em_dash>;        	
         };
 
+        td_cad: tap_dance_cad {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_CTL_ALT_DEL";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ESC>, <&kp LC(LA(DEL))>;        	
+        };
+
+
     };    
     
         keymap {
@@ -114,10 +123,10 @@
 // | SHFT |  Z  |  X  |  C   |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | CTRL | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB     &kp Q &kp W &kp E     &kp R &kp T      &kp Y   &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LGUI    &kp A &kp S &kp D     &kp F &kp G      &td_dsh &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &smart_shft &kp Z &kp X &kp C     &kp V &kp B      &td_en  &td_em &kp COMMA &kp DOT &kp FSLH &kp ESC
-                           &kp LCTRL &mo 2 &kp SPACE  &kp RET &mo 3  &kp RALT
+   &kp TAB     &kp Q &kp W &kp E     &kp R &kp T      &kp Y   &kp U &kp I     &kp O   &kp P    &kp BSPC
+   &kp LGUI    &kp A &kp S &kp D     &kp F &kp G      &td_dsh &kp J &kp K     &kp L   &kp SEMI &kp SQT
+   &smart_shft &kp Z &kp X &kp C     &kp V &kp B      &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &td_cad
+                           &kp LCTRL &mo 2 &kp SPACE  &kp RET &mo 3 &kp RALT
                         >;
                 };
                 
