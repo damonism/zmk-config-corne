@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define WIN 1
@@ -165,10 +166,10 @@
 // |      | MAC |     |     |     |     |   | VLUP|BRIUP|     |     |     |     |
 // |      | WIN |     |     |     |     |   | VLDN|BRIDN|PREV |NEXT |     |     | BTCLR
 //                    | GUI |     | SPC |   | ENT |     | ALT |
-   &trans &bt BT0 &bt BT1 &bt BT2  &bt BT3 &bt BT4     &kp K_MUTE   &trans       &trans     &trans     &kp C_PP &trans 
-   &trans &to 0   &trans  &trans   &trans  &trans      &kp C_VOL_UP &kp C_BRI_UP &trans     &trans     &trans   &trans
-   &trans &to 1   &trans  &trans   &trans  &trans      &kp C_VOL_DN &kp C_BRI_DN &kp C_PREV &kp C_NEXT &trans   &bt BT_CLR
-                    	  &kp LGUI &trans  &kp SPACE   &kp RET      &trans       &kp RALT
+   &out OUT_TOG &bt BT0 &bt BT1 &bt BT2  &bt BT3 &bt BT4     &kp K_MUTE   &trans       &trans     &trans     &kp C_PP &trans 
+   &trans       &to 0   &trans  &trans   &trans  &trans      &kp C_VOL_UP &kp C_BRI_UP &trans     &trans     &trans   &trans
+   &trans       &to 1   &trans  &trans   &trans  &trans      &kp C_VOL_DN &kp C_BRI_DN &kp C_PREV &kp C_NEXT &trans   &bt BT_CLR
+                    	        &kp LGUI &trans  &kp SPACE   &kp RET      &trans       &kp RALT
                     	>;
         	};
         };
